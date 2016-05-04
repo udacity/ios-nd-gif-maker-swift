@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EDFAA8ED1CDA99A500D2CB08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFAA8EC1CDA99A500D2CB08 /* AppDelegate.swift */; };
+		EDFAA8F41CDA99A500D2CB08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDFAA8F31CDA99A500D2CB08 /* Assets.xcassets */; };
+		EDFAA8F71CDA99A500D2CB08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDFAA8F51CDA99A500D2CB08 /* LaunchScreen.storyboard */; };
+		EDFAA9021CDA99A500D2CB08 /* GifMaker_Swift_TemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFAA9011CDA99A500D2CB08 /* GifMaker_Swift_TemplateTests.swift */; };
+		EDFAA90D1CDA99A500D2CB08 /* GifMaker_Swift_TemplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFAA90C1CDA99A500D2CB08 /* GifMaker_Swift_TemplateUITests.swift */; };
+		EDFAA91B1CDA99F200D2CB08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDFAA91A1CDA99F200D2CB08 /* Main.storyboard */; };
+		EDFAA91F1CDA9C3100D2CB08 /* AVAssetImageGeneratorTimePoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFAA91C1CDA9C3100D2CB08 /* AVAssetImageGeneratorTimePoints.swift */; };
+		EDFAA9201CDA9C3100D2CB08 /* Regift.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFAA91D1CDA9C3100D2CB08 /* Regift.swift */; };
+		EDFAA9211CDA9C3100D2CB08 /* RegiftCaption.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFAA91E1CDA9C3100D2CB08 /* RegiftCaption.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EDFAA8FE1CDA99A500D2CB08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDFAA8E11CDA99A500D2CB08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDFAA8E81CDA99A500D2CB08;
+			remoteInfo = GifMaker_Swift_Template;
+		};
+		EDFAA9091CDA99A500D2CB08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDFAA8E11CDA99A500D2CB08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDFAA8E81CDA99A500D2CB08;
+			remoteInfo = GifMaker_Swift_Template;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EDFAA8E91CDA99A500D2CB08 /* GifMaker_Swift_Template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GifMaker_Swift_Template.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDFAA8EC1CDA99A500D2CB08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EDFAA8F31CDA99A500D2CB08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDFAA8F61CDA99A500D2CB08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EDFAA8F81CDA99A500D2CB08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDFAA8FD1CDA99A500D2CB08 /* GifMaker_Swift_TemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GifMaker_Swift_TemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDFAA9011CDA99A500D2CB08 /* GifMaker_Swift_TemplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifMaker_Swift_TemplateTests.swift; sourceTree = "<group>"; };
+		EDFAA9031CDA99A500D2CB08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDFAA9081CDA99A500D2CB08 /* GifMaker_Swift_TemplateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GifMaker_Swift_TemplateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDFAA90C1CDA99A500D2CB08 /* GifMaker_Swift_TemplateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifMaker_Swift_TemplateUITests.swift; sourceTree = "<group>"; };
+		EDFAA90E1CDA99A500D2CB08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDFAA91A1CDA99F200D2CB08 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		EDFAA91C1CDA9C3100D2CB08 /* AVAssetImageGeneratorTimePoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVAssetImageGeneratorTimePoints.swift; sourceTree = "<group>"; };
+		EDFAA91D1CDA9C3100D2CB08 /* Regift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Regift.swift; sourceTree = "<group>"; };
+		EDFAA91E1CDA9C3100D2CB08 /* RegiftCaption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegiftCaption.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDFAA8E61CDA99A500D2CB08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDFAA8FA1CDA99A500D2CB08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDFAA9051CDA99A500D2CB08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EDFAA8E01CDA99A500D2CB08 = {
+			isa = PBXGroup;
+			children = (
+				EDFAA8EB1CDA99A500D2CB08 /* GifMaker_Swift_Template */,
+				EDFAA9001CDA99A500D2CB08 /* GifMaker_Swift_TemplateTests */,
+				EDFAA90B1CDA99A500D2CB08 /* GifMaker_Swift_TemplateUITests */,
+				EDFAA8EA1CDA99A500D2CB08 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EDFAA8EA1CDA99A500D2CB08 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDFAA8E91CDA99A500D2CB08 /* GifMaker_Swift_Template.app */,
+				EDFAA8FD1CDA99A500D2CB08 /* GifMaker_Swift_TemplateTests.xctest */,
+				EDFAA9081CDA99A500D2CB08 /* GifMaker_Swift_TemplateUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDFAA8EB1CDA99A500D2CB08 /* GifMaker_Swift_Template */ = {
+			isa = PBXGroup;
+			children = (
+				EDFAA8EC1CDA99A500D2CB08 /* AppDelegate.swift */,
+				EDFAA8F31CDA99A500D2CB08 /* Assets.xcassets */,
+				EDFAA91A1CDA99F200D2CB08 /* Main.storyboard */,
+				EDFAA8F51CDA99A500D2CB08 /* LaunchScreen.storyboard */,
+				EDFAA8F81CDA99A500D2CB08 /* Info.plist */,
+				EDFAA9221CDA9C4700D2CB08 /* Regift files */,
+			);
+			path = GifMaker_Swift_Template;
+			sourceTree = "<group>";
+		};
+		EDFAA9001CDA99A500D2CB08 /* GifMaker_Swift_TemplateTests */ = {
+			isa = PBXGroup;
+			children = (
+				EDFAA9011CDA99A500D2CB08 /* GifMaker_Swift_TemplateTests.swift */,
+				EDFAA9031CDA99A500D2CB08 /* Info.plist */,
+			);
+			path = GifMaker_Swift_TemplateTests;
+			sourceTree = "<group>";
+		};
+		EDFAA90B1CDA99A500D2CB08 /* GifMaker_Swift_TemplateUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EDFAA90C1CDA99A500D2CB08 /* GifMaker_Swift_TemplateUITests.swift */,
+				EDFAA90E1CDA99A500D2CB08 /* Info.plist */,
+			);
+			path = GifMaker_Swift_TemplateUITests;
+			sourceTree = "<group>";
+		};
+		EDFAA9221CDA9C4700D2CB08 /* Regift files */ = {
+			isa = PBXGroup;
+			children = (
+				EDFAA91C1CDA9C3100D2CB08 /* AVAssetImageGeneratorTimePoints.swift */,
+				EDFAA91D1CDA9C3100D2CB08 /* Regift.swift */,
+				EDFAA91E1CDA9C3100D2CB08 /* RegiftCaption.swift */,
+			);
+			name = "Regift files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDFAA8E81CDA99A500D2CB08 /* GifMaker_Swift_Template */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDFAA9111CDA99A500D2CB08 /* Build configuration list for PBXNativeTarget "GifMaker_Swift_Template" */;
+			buildPhases = (
+				EDFAA8E51CDA99A500D2CB08 /* Sources */,
+				EDFAA8E61CDA99A500D2CB08 /* Frameworks */,
+				EDFAA8E71CDA99A500D2CB08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GifMaker_Swift_Template;
+			productName = GifMaker_Swift_Template;
+			productReference = EDFAA8E91CDA99A500D2CB08 /* GifMaker_Swift_Template.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EDFAA8FC1CDA99A500D2CB08 /* GifMaker_Swift_TemplateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDFAA9141CDA99A500D2CB08 /* Build configuration list for PBXNativeTarget "GifMaker_Swift_TemplateTests" */;
+			buildPhases = (
+				EDFAA8F91CDA99A500D2CB08 /* Sources */,
+				EDFAA8FA1CDA99A500D2CB08 /* Frameworks */,
+				EDFAA8FB1CDA99A500D2CB08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDFAA8FF1CDA99A500D2CB08 /* PBXTargetDependency */,
+			);
+			name = GifMaker_Swift_TemplateTests;
+			productName = GifMaker_Swift_TemplateTests;
+			productReference = EDFAA8FD1CDA99A500D2CB08 /* GifMaker_Swift_TemplateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EDFAA9071CDA99A500D2CB08 /* GifMaker_Swift_TemplateUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDFAA9171CDA99A500D2CB08 /* Build configuration list for PBXNativeTarget "GifMaker_Swift_TemplateUITests" */;
+			buildPhases = (
+				EDFAA9041CDA99A500D2CB08 /* Sources */,
+				EDFAA9051CDA99A500D2CB08 /* Frameworks */,
+				EDFAA9061CDA99A500D2CB08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDFAA90A1CDA99A500D2CB08 /* PBXTargetDependency */,
+			);
+			name = GifMaker_Swift_TemplateUITests;
+			productName = GifMaker_Swift_TemplateUITests;
+			productReference = EDFAA9081CDA99A500D2CB08 /* GifMaker_Swift_TemplateUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDFAA8E11CDA99A500D2CB08 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Gabrielle Miller-Messner";
+				TargetAttributes = {
+					EDFAA8E81CDA99A500D2CB08 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					EDFAA8FC1CDA99A500D2CB08 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = EDFAA8E81CDA99A500D2CB08;
+					};
+					EDFAA9071CDA99A500D2CB08 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = EDFAA8E81CDA99A500D2CB08;
+					};
+				};
+			};
+			buildConfigurationList = EDFAA8E41CDA99A500D2CB08 /* Build configuration list for PBXProject "GifMaker_Swift_Template" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDFAA8E01CDA99A500D2CB08;
+			productRefGroup = EDFAA8EA1CDA99A500D2CB08 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDFAA8E81CDA99A500D2CB08 /* GifMaker_Swift_Template */,
+				EDFAA8FC1CDA99A500D2CB08 /* GifMaker_Swift_TemplateTests */,
+				EDFAA9071CDA99A500D2CB08 /* GifMaker_Swift_TemplateUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDFAA8E71CDA99A500D2CB08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDFAA91B1CDA99F200D2CB08 /* Main.storyboard in Resources */,
+				EDFAA8F71CDA99A500D2CB08 /* LaunchScreen.storyboard in Resources */,
+				EDFAA8F41CDA99A500D2CB08 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDFAA8FB1CDA99A500D2CB08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDFAA9061CDA99A500D2CB08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDFAA8E51CDA99A500D2CB08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDFAA9201CDA9C3100D2CB08 /* Regift.swift in Sources */,
+				EDFAA9211CDA9C3100D2CB08 /* RegiftCaption.swift in Sources */,
+				EDFAA8ED1CDA99A500D2CB08 /* AppDelegate.swift in Sources */,
+				EDFAA91F1CDA9C3100D2CB08 /* AVAssetImageGeneratorTimePoints.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDFAA8F91CDA99A500D2CB08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDFAA9021CDA99A500D2CB08 /* GifMaker_Swift_TemplateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDFAA9041CDA99A500D2CB08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDFAA90D1CDA99A500D2CB08 /* GifMaker_Swift_TemplateUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EDFAA8FF1CDA99A500D2CB08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDFAA8E81CDA99A500D2CB08 /* GifMaker_Swift_Template */;
+			targetProxy = EDFAA8FE1CDA99A500D2CB08 /* PBXContainerItemProxy */;
+		};
+		EDFAA90A1CDA99A500D2CB08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDFAA8E81CDA99A500D2CB08 /* GifMaker_Swift_Template */;
+			targetProxy = EDFAA9091CDA99A500D2CB08 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EDFAA8F51CDA99A500D2CB08 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDFAA8F61CDA99A500D2CB08 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EDFAA90F1CDA99A500D2CB08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EDFAA9101CDA99A500D2CB08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDFAA9121CDA99A500D2CB08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GifMaker_Swift_Template/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Udacity.GifMaker-Swift-Template";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EDFAA9131CDA99A500D2CB08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GifMaker_Swift_Template/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Udacity.GifMaker-Swift-Template";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EDFAA9151CDA99A500D2CB08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GifMaker_Swift_TemplateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Udacity.GifMaker-Swift-TemplateTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GifMaker_Swift_Template.app/GifMaker_Swift_Template";
+			};
+			name = Debug;
+		};
+		EDFAA9161CDA99A500D2CB08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GifMaker_Swift_TemplateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Udacity.GifMaker-Swift-TemplateTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GifMaker_Swift_Template.app/GifMaker_Swift_Template";
+			};
+			name = Release;
+		};
+		EDFAA9181CDA99A500D2CB08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GifMaker_Swift_TemplateUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Udacity.GifMaker-Swift-TemplateUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GifMaker_Swift_Template;
+			};
+			name = Debug;
+		};
+		EDFAA9191CDA99A500D2CB08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GifMaker_Swift_TemplateUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Udacity.GifMaker-Swift-TemplateUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GifMaker_Swift_Template;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDFAA8E41CDA99A500D2CB08 /* Build configuration list for PBXProject "GifMaker_Swift_Template" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDFAA90F1CDA99A500D2CB08 /* Debug */,
+				EDFAA9101CDA99A500D2CB08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDFAA9111CDA99A500D2CB08 /* Build configuration list for PBXNativeTarget "GifMaker_Swift_Template" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDFAA9121CDA99A500D2CB08 /* Debug */,
+				EDFAA9131CDA99A500D2CB08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDFAA9141CDA99A500D2CB08 /* Build configuration list for PBXNativeTarget "GifMaker_Swift_TemplateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDFAA9151CDA99A500D2CB08 /* Debug */,
+				EDFAA9161CDA99A500D2CB08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDFAA9171CDA99A500D2CB08 /* Build configuration list for PBXNativeTarget "GifMaker_Swift_TemplateUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDFAA9181CDA99A500D2CB08 /* Debug */,
+				EDFAA9191CDA99A500D2CB08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDFAA8E11CDA99A500D2CB08 /* Project object */;
+}
