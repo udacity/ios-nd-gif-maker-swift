@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EDDFC4DC1CE261A600A586CA /* tinaFeyHiFive.gif in Resources */ = {isa = PBXBuildFile; fileRef = EDDFC4DB1CE261A600A586CA /* tinaFeyHiFive.gif */; };
+		EDDFC4DE1CE261C400A586CA /* hotlineBling.gif in Resources */ = {isa = PBXBuildFile; fileRef = EDDFC4DD1CE261C400A586CA /* hotlineBling.gif */; };
 		EDFAA8ED1CDA99A500D2CB08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFAA8EC1CDA99A500D2CB08 /* AppDelegate.swift */; };
 		EDFAA8F41CDA99A500D2CB08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDFAA8F31CDA99A500D2CB08 /* Assets.xcassets */; };
 		EDFAA8F71CDA99A500D2CB08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDFAA8F51CDA99A500D2CB08 /* LaunchScreen.storyboard */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EDDFC4DB1CE261A600A586CA /* tinaFeyHiFive.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tinaFeyHiFive.gif; sourceTree = "<group>"; };
+		EDDFC4DD1CE261C400A586CA /* hotlineBling.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hotlineBling.gif; sourceTree = "<group>"; };
 		EDFAA8E91CDA99A500D2CB08 /* GifMaker_Swift_Template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GifMaker_Swift_Template.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDFAA8EC1CDA99A500D2CB08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDFAA8F31CDA99A500D2CB08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 				EDFAA91A1CDA99F200D2CB08 /* Main.storyboard */,
 				EDFAA8F51CDA99A500D2CB08 /* LaunchScreen.storyboard */,
 				EDFAA8F81CDA99A500D2CB08 /* Info.plist */,
+				EDDFC4DB1CE261A600A586CA /* tinaFeyHiFive.gif */,
+				EDDFC4DD1CE261C400A586CA /* hotlineBling.gif */,
 				EDFAA9221CDA9C4700D2CB08 /* Regift files */,
 			);
 			path = GifMaker_Swift_Template;
@@ -243,6 +249,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDDFC4DC1CE261A600A586CA /* tinaFeyHiFive.gif in Resources */,
+				EDDFC4DE1CE261C400A586CA /* hotlineBling.gif in Resources */,
 				EDFAA91B1CDA99F200D2CB08 /* Main.storyboard in Resources */,
 				EDFAA8F71CDA99A500D2CB08 /* LaunchScreen.storyboard in Resources */,
 				EDFAA8F41CDA99A500D2CB08 /* Assets.xcassets in Resources */,

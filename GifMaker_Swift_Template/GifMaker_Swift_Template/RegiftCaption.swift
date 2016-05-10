@@ -7,36 +7,38 @@
 //
 
 import Foundation
-
+import CoreGraphics
+import UIKit
 
 extension Regift {
     
+ 
     
     func addCaption(image: CGImageRef, text: NSString, font: UIFont) -> CGImage {
-        var image = UIImage(CGImage:image)
+        let image = UIImage(CGImage:image)
         // Text attributes
-        var color = UIColor.whiteColor()
+        let color = UIColor.whiteColor()
         
-        var biggerFont: UIFont = UIFont(name: "HelveticaNeue-CondensedBlack", size:(font.pointSize * 1.3))!
-        var attributes = [NSForegroundColorAttributeName:color, NSFontAttributeName:biggerFont, NSStrokeColorAttributeName : UIColor.blackColor(), NSStrokeWidthAttributeName : -4]
+        let biggerFont: UIFont = UIFont(name: "HelveticaNeue-CondensedBlack", size:(font.pointSize * 1.3))!
+        let attributes = [NSForegroundColorAttributeName:color, NSFontAttributeName:biggerFont, NSStrokeColorAttributeName : UIColor.blackColor(), NSStrokeWidthAttributeName : -4]
         
         // Text size
-        var size =  text.sizeWithAttributes(attributes)
-        var captionWidth = size.width
+        let size =  text.sizeWithAttributes(attributes)
+        let captionWidth = size.width
         
         // Draw image
         UIGraphicsBeginImageContext(image.size)
-        var firstRect = CGRectMake(0,0,image.size.width,image.size.height)
+        let firstRect = CGRectMake(0,0,image.size.width,image.size.height)
         image.drawInRect(firstRect)
         
         // Draw text
-        var sideMargin = (image.size.width - captionWidth)/2.0
-        var textOrigin  = CGPointMake(sideMargin, image.size.height - 60)
-        var secondRect = CGRectMake(textOrigin.x,textOrigin.y,image.size.width,image.size.height)
+        let sideMargin = (image.size.width - captionWidth)/2.0
+        let textOrigin  = CGPointMake(sideMargin, image.size.height - 60)
+        let secondRect = CGRectMake(textOrigin.x,textOrigin.y,image.size.width,image.size.height)
         text.drawInRect(CGRectIntegral(secondRect), withAttributes: attributes)
         
         // Capture combined image and text
-        var newImage = UIGraphicsGetImageFromCurrentImageContext()
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         return newImage.CGImage!
     }
