@@ -48,6 +48,6 @@ extension Regift {
         // Capture combined image and text
         let newImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        return newImage.CGImage!
+        return newImage!.CGImage!
     }
 }
