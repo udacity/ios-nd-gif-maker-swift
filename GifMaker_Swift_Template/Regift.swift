@@ -27,7 +27,7 @@ private struct Group {
     let group = DispatchGroup()
     func enter() { group.enter() }
     func leave() { group.leave() }
-    func wait() { let _ = group.wait(timeout: DispatchTime.distantFuture) }
+    func wait() { _ = group.wait(timeout: DispatchTime.distantFuture) }
 }
 
 /// Easily convert a video to a GIF. It can convert the whole thing, or you can choose a section to trim out.
@@ -60,8 +60,7 @@ private struct Group {
     static let FileName = "regift.gif"
     static let TimeInterval: Int32 = 600
     static let Tolerance = 0.01
-    
-    
+
     // Static conversion methods, for convenient and easy-to-use API:
     
     /**
@@ -204,16 +203,16 @@ private struct Group {
      - returns: The path to the created GIF, or `nil` if there was an error creating it.
      */
     
-    open func createGif(_ caption : String?, font : UIFont?) -> URL? {
+    open func createGif(_ caption: String?, font: UIFont?) -> URL? {
         
-        let fileProperties = [kCGImagePropertyGIFDictionary as String:[
+        let fileProperties: [String: Any] = [kCGImagePropertyGIFDictionary as String: [
             kCGImagePropertyGIFLoopCount as String: NSNumber(value: Int32(loopCount))],
                               kCGImagePropertyGIFHasGlobalColorMap as String: NSValue(nonretainedObject: true)
-        ] as [String : Any]
+        ]
         
         let frameProperties = [
-            kCGImagePropertyGIFDictionary as String:[
-                kCGImagePropertyGIFDelayTime as String:delayTime
+            kCGImagePropertyGIFDictionary as String: [
+                kCGImagePropertyGIFDelayTime as String: delayTime
             ]
         ]
         
@@ -233,8 +232,8 @@ private struct Group {
         do {
             
             if let caption = caption, let font = font {
-                return try createGIFForTimePointsAndCaption(timePoints, fileProperties: fileProperties as [String : AnyObject], frameProperties: frameProperties as [String : AnyObject], frameCount: frameCount, caption: caption as NSString, font:font)
-            }else{
+                return try createGIFForTimePointsAndCaption(timePoints, fileProperties: fileProperties as [String : AnyObject], frameProperties: frameProperties as [String : AnyObject], frameCount: frameCount, caption: caption as NSString, font: font)
+            } else {
                 return try createGIFForTimePoints(timePoints, fileProperties: fileProperties as [String : AnyObject], frameProperties: frameProperties as [String : AnyObject], frameCount: frameCount)
             }
         } catch {
@@ -259,11 +258,11 @@ private struct Group {
      */
     open func createGIFForTimePoints(_ timePoints: [TimePoint], fileProperties: [String: AnyObject], frameProperties: [String: AnyObject], frameCount: Int) throws -> URL {
         // Ensure the source media is a valid file.
-        guard asset.tracks(withMediaCharacteristic: AVMediaCharacteristicVisual).count > 0 else {
+        guard asset.tracks(withMediaCharacteristic: AVMediaCharacteristic.visual).count > 0 else {
             throw RegiftError.sourceFormatInvalid
         }
         
-        var fileURL:URL?
+        var fileURL: URL?
         if self.destinationFileURL != nil {
             fileURL = self.destinationFileURL
         } else {
@@ -296,9 +295,9 @@ private struct Group {
         var dispatchError: Bool = false
         gifGroup.enter()
         
-        generator.generateCGImagesAsynchronously(forTimes: times, completionHandler: { (requestedTime, image, actualTime, result, error) in
-            guard let imageRef = image , error == nil else {
-                print("An error occurred: \(error), image is \(image)")
+        generator.generateCGImagesAsynchronously(forTimes: times, completionHandler: { (requestedTime, image, _, _, error) in
+            guard let imageRef = image, error == nil else {
+                print("An error occurred: \(error?.localizedDescription ?? "")")
                 dispatchError = true
                 gifGroup.leave()
                 return
@@ -328,9 +327,7 @@ private struct Group {
         
         return fileURL!
     }
-    
-    
-    
+
     /// Create a GIF using the given time points in a movie file stored at the URL provided and a caption to be overlayed.
     ///
     /// :param: timePoints An array of `TimePoint`s (which are typealiased `CMTime`s) to use as the frames in the GIF.
@@ -362,7 +359,7 @@ private struct Group {
         for time in timePoints {
             do {
                 let imageRef = try generator.copyCGImage(at: time, actualTime: nil)
-                let imageRefWithCaption = addCaption(imageRef,text:caption, font:font)
+                let imageRefWithCaption = addCaption(imageRef, text: caption, font: font)
                 CGImageDestinationAddImage(destination, imageRefWithCaption, frameProperties as CFDictionary)
             } catch let error as NSError {
                 print("An error occurred: \(error)")
